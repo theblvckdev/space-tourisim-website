@@ -1,6 +1,6 @@
 # Frontend Mentor - Space tourism website
 
-![Design preview for the Space tourism website coding challenge](./preview.jpg)
+![Design preview for the Space tourism website coding challenge](./src/assets/images/home/background-home-desktop.jpg)
 
 ## Welcome! 👋
 
