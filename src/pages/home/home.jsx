@@ -7,13 +7,13 @@ const Home = () => {
       <section className="overflow-hidden">
         <div className="h-screen w-screen lg:bg-[url('../images/home/background-home-desktop.jpg')] md:bg-[url('../images/home/background-home-tablet.jpg')] bg-[url('../images/home/background-home-mobile.jpg')] bg-cover bg-center bg-no-repeat">
           <div className="lg:w-4/5 w-full mx-auto relative h-full">
-            <div className="lg:absolute md:bottom-28 lg:pt-0 md:pt-24 pt-10 tracking-wide w-full">
+            <div className="lg:absolute md:bottom-28 lg:pt-0 md:pt-24 pt-10 w-full">
               <div className="flex lg:flex-row flex-col lg:gap-0 md:gap-36 gap-20 lg:justify-normal justify-center lg:items-end items-center h-screen lg:h-fit">
                 <div className="lg:basis-1/2 basis-0">
                   <h5
                     data-aos="fade-left"
                     data-aos-duration="2000"
-                    className="font-barlow lg:text-left text-center tracking-wider md:leading-[28px] leading-[18px] text-[18px] md:text-[28px] text-gray-400 uppercase"
+                    className="font-barlow lg:text-left text-center tracking-wider md:leading-[28px] leading-[18px] text-lg md:text-[28px] text-gray-400 uppercase"
                   >
                     So you want to travel to
                   </h5>

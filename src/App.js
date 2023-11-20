@@ -4,6 +4,7 @@ import Home from './pages/home/home'
 import Navbar from './components/navbar'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import Destination from './pages/destination/destination'
 
 const App = () => {
   useEffect(() => {
@@ -16,6 +17,7 @@ const App = () => {
         <Navbar />
         <Routes>
           <Route exact path='/' element={<Home />} />
+          <Route exact path='/destination' element={<Destination />} />
         </Routes>
       </Router>
     </div>
