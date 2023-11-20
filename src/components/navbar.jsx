@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/images/logo.svg";
 
 const navigation = [
@@ -16,6 +16,8 @@ function classNames(...classes) {
 }
 
 const Navbar = () => {
+  const location = useLocation();
+
   return (
     <Disclosure
       as="nav"
@@ -36,12 +38,11 @@ const Navbar = () => {
                         key={index}
                         to={item.path}
                         className={classNames(
-                          item.current
+                          item.path === location.pathname
                             ? "border-b-white text-white"
                             : "text-gray-300 hover:border-b-white",
                           "h-full text-[14px] flex gap-3 duration-700 border-b-2 border-b-transparent items-center font-barlow py-7 uppercase tracking-widest font-light"
                         )}
-                        aria-current={item.current ? "page" : undefined}
                       >
                         <div className="text-white font-medium lg:block md:hidden">
                           0{index}
@@ -70,19 +71,17 @@ const Navbar = () => {
           <Disclosure.Panel className="sm:hidden duration-700 bg-gray-700 backdrop-blur-xl bg-opacity-50 z-10 fixed h-full top-0 right-0 w-[70%]">
             <div className="space-y-6 px-7 pb-3 pt-32">
               {navigation.map((item, index) => (
-                <Disclosure.Button
+                <Link
                   key={index}
-                  as="a"
-                  href={item.href}
+                  to={item.path}
                   className={classNames(
-                    item.current ? "text-white" : "text-gray-300",
+                    item.path === location.pathname ? "text-white" : "text-gray-300",
                     "text-xl flex gap-4 tracking-[.1em] font-light"
                   )}
-                  aria-current={item.current ? "page" : undefined}
                 >
                   <div className="text-white font-medium">0{index}</div>
                   <div>{item.name}</div>
-                </Disclosure.Button>
+                </Link>
               ))}
             </div>
           </Disclosure.Panel>
