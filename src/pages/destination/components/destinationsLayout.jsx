@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import React, { useContext } from "react";
 import { navTabs } from "../constant/navTabs";
 import { PlanetContext } from "../../../context/planetChangeContext";
@@ -17,15 +18,15 @@ const DestinationLayout = ({ imageUrl, title, text, distance, travelTime }) => {
     <>
       <div className="h-screen w-screen">
         <div className="lg:w-4/5 w-full mx-auto relative h-full">
-          <div className="absolute bottom-20 w-full">
-            <div className="flex items-end h-fit">
-              <div className="basis-1/2">
+          <div className="lg:absolute md:bottom-20 w-full">
+            <div className="flex lg:flex-row flex-col lg:justify-normal justify-center lg:items-end items-center h-fit">
+              <div className="lg:basis-1/2 basis-0">
                 <h5
                   data-aos="fade-right"
                   data-aos-duration="2000"
-                  className="text-gray-200 flex gap-5 text-[25px] leading-[18px] font-barlow tracking-widest uppercase"
+                  className="text-gray-200 flex gap-5 text-left text-[25px] leading-[18px] font-barlow tracking-widest uppercase"
                 >
-                  <div className="text-gray-400">01</div>{" "}
+                  <div className="text-gray-400">01</div>
                   <div>Pick your destination</div>
                 </h5>
                 <div className="mt-14 text-center">
