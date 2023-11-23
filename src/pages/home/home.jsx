@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "./utils/button";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -38,7 +39,9 @@ const Home = () => {
 
                 <div className="lg:basis-1/2 md:basis-0">
                   <div className="flex justify-end">
-                    <Button text={"Explore"} />
+                    <Link to={"/destination"} className="no-underline">
+                      <Button text={"Explore"} />
+                    </Link>
                   </div>
                 </div>
               </div>
