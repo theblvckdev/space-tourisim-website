@@ -1,4 +1,3 @@
-import { Fragment } from "react";
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Link, useLocation } from "react-router-dom";
@@ -75,7 +74,9 @@ const Navbar = () => {
                   key={index}
                   to={item.path}
                   className={classNames(
-                    item.path === location.pathname ? "text-white" : "text-gray-300",
+                    item.path === location.pathname
+                      ? "text-white"
+                      : "text-gray-300",
                     "text-xl flex gap-4 tracking-[.1em] font-light"
                   )}
                 >

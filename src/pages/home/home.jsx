@@ -12,14 +12,14 @@ const Home = () => {
               <div className="flex lg:flex-row flex-col lg:gap-0 md:gap-36 gap-20 lg:justify-normal justify-center lg:items-end items-center h-screen lg:h-fit">
                 <div className="lg:basis-1/2 basis-0">
                   <h5
-                    data-aos="fade-left"
+                    data-aos="fade-up"
                     data-aos-duration="2000"
                     className="font-barlow lg:text-left text-center tracking-wider md:leading-[28px] leading-[18px] text-lg md:text-[28px] text-gray-400 uppercase"
                   >
                     So you want to travel to
                   </h5>
                   <h1
-                    data-aos="fade-right"
+                    data-aos="fade-up"
                     data-aos-duration="2000"
                     className="font-bellefair lg:text-left text-center md:text-[150px] md:leading-[200px] text-8xl leading-[130px] text-white uppercase"
                   >
