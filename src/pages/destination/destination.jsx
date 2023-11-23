@@ -11,7 +11,7 @@ const Destination = () => {
 
   return (
     <>
-      <section className="overflow-hidden lg:bg-[url('../images/destination/background-destination-desktop.jpg')] md:bg-[url('../images/destination/background-destination-tablet.jpg')] bg-[url('../images/destination/background-destination-mobile.jpg')] bg-cover bg-center bg-no-repeat">
+      <section className="md:overflow-hidden overflow-auto lg:bg-[url('../images/destination/background-destination-desktop.jpg')] md:bg-[url('../images/destination/background-destination-tablet.jpg')] bg-[url('../images/destination/background-destination-mobile.jpg')] bg-cover bg-center bg-no-repeat">
         {currentTab === 1 ? (
           <DestinationLayout
             imageUrl={moon}
