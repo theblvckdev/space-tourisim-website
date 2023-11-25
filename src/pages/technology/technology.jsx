@@ -35,7 +35,7 @@ const Technology = () => {
                         className="text-white md:text-left flex gap-5 md:justify-normal justify-center md:text-[25px] md:leading-[18px] text-lg font-barlow tracking-widest uppercase"
                       >
                         <div className="text-gray-400">03</div>
-                        <div>Space lunch 101</div>
+                        <div>Space launch 101</div>
                       </h5>
 
                       <div className="mt-28">
